@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="./Main/main.css">
+    <link rel="stylesheet" href="./Main/head_foot.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.1/css/all.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class = "head">
+        <!-- -----------------------Menu-Ipad-------------------------------- -->
+        <div class="container-fluid">
+            <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                    <i class="fa-solid fa-bars"></i>
+                <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                    <li><a href="index.html">TRANG CHỦ</a></li>
+                    <li><a href="Introduce.html">GIỚI THIỆU</a></li>
+                    <li class="dropdown-submenu">
+                        <a class="test" tabindex="-1" href="index.html">SẢN PHẨM<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="Product_PC.html">PC</a></li>
+                            <li><a href="Product_LAP.html">Laptop</a></li>
+                            <li><a href="Product_LKPC.html">Linh kiện PC</a></li>
+                            <li><a href="Product_Chuot.html">Chuột</a></li>
+                            <li><a href="Product_ManHinh.html">Màn hình</a></li>
+                            <li><a href="Product_BP.html">Bàn phím</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="Contact.html">LIÊN HỆ</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div id="logo">
+            <a href="index.html"><img src="./Main/image_main/logo.png"></a>
+        </div>
+       
+        <!-- -----------------------Menu-PC-------------------------------- -->
+        <ul id="menu">
+            <li><a style="color: black;" href="index.html">TRANG CHỦ</a></li>
+            <li><a href="Introduce.html">GIỚI THIỆU</a></li> 
+            <li><a href="index.html">SẢN PHẨM</a>
+                <ul class="sub-menu">
+                    <li><a href="Product_PC.html">PC</a></li>
+                    <li><a href="Product_LAP.html">Laptop</a></li>
+                    <li><a href="Product_LKPC.html">Linh kiện PC</a></li>
+                    <li><a href="Product_Chuot.html">Chuột</a></li>
+                    <li><a href="Product_ManHinh.html">Màn hình</a></li>
+                    <li style="border-bottom: none;"><a href="Product_BP.html">Bàn phím</a></li>
+                </ul>
+            </li>
+            <li><a href="Contact.html">LIÊN HỆ</a></li>
+        </ul>
+        
+        <div id="search-info">
+            <div class="search">
+                <input type="text" name="product search" id="search-text" placeholder="Bạn muốn tìm sản phẩm gì ?">
+                <a href="Product_PC.html"><button id="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button></a>
+            </div>
+
+            <div class="log-reg">
+                <i class="fa-solid fa-user"></i>
+                <ul>
+                    <li><a href="Login.html">ĐĂNG NHẬP</a></li>
+                    <li style="border-bottom: none;"><a href="Register.html">ĐĂNG KÝ</a></li>
+                </ul>
+            </div>
+            
+            <div class="cart-shop">
+                <a href="Paymoney.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------------------------------------------------------- -->
+    <div class ="content"> 
+        <div class="images">
+            <div class="image-top1">
+                <a href="Product_LAP.html"><img src="./Main/image_main/img-laptop.webp"></a>
+                <a href="Product_LAP.html"><img src="./Main/image_main/img-lapisus.webp"></a>
+                <a href="Product_LKPC.html"><img src="./Main/image_main/img_corei.webp"></a>
+            </div>
+
+            <div class="image-top2">
+                <a href="Product_Chuot.html"><img src="./Main/image_main/AD_1.png"></a>
+                <a href="Product_PC.html"><img src="./Main/image_main/AD_2.png"></a>
+                <a href="Product_BP.html"><img src="./Main/image_main/AD_3.png"></a>
+            </div>
+
+            <div class="image-bottom">
+                <div class="image-child">
+                    <a href="Product_PC.html"><img src="./Main/image_main/img1.webp"></a>
+                    <a href="Product_PC.html">
+                        <div class="image-child-text"><b>Mua Ngay</b></div>
+                    </a>
+                </div>
+
+                <div class="image-child">
+                    <a href="Product_BP.html"><img id="img2" src="./Main/image_main/img2.webp"></a>
+                    <a href="Product_BP.html">
+                        <div class="image-child-text"><b>Mua Ngay</b></div>
+                    </a>
+                </div>
+
+                <div class="image-child">
+                    <a href="Product_Chuot.html"><img src="./Main/image_main/img3.webp"></a>
+                    <a href="Product_Chuot.html">
+                        <div class="image-child-text"><b>Mua Ngay</b></div>
+                    </a>
+                </div>
+
+                <div class="image-child">
+                    <a href="Product_ManHinh.html"><img src="./Main/image_main/img4.webp"></a>
+                    <a href="Product_ManHinh.html">
+                        <div class="image-child-text"><b>Mua Ngay</b></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- -----------------------PRODUCTS-------------------------- -->
+        <div class="products">
+
+            <!-- -----------------------PC-------------------------- -->
+            <div class="product-title">
+                <h2>PC BAOLONG - MIỄN PHÍ GIAO HÀNG TOÀN QUỐC</h2>
+            </div>
+            
+            <div class="product-image">
+                <div class="product-item1">
+                    <a href="ChitietPC01.html"><img src="./PC/PC01.webp"></a> 
+                    <br>
+                    <a href="ChitietPC01.html">G-Studio X</a>
+                    <p>91,990,000đ <sup>95,120,000đ</sup></p>
+                </div>
+                <div class="product-item2">
+                    <a href="ChitietPC03.html"><img src="./PC/PC03.webp"></a> 
+                    <br>
+                    <a href="ChitietPC03.html">PHANTOM i3060</a>
+                    <p>38,390,000đ <sup>40,910,000đ</sup></p>
+                </div>
+                <div class="product-item3">
+                    <a href="ChitietPC02.html"><img src="./PC/PC02.webp"></a> 
+                    <br>
+                    <a href="ChitietPC02.html">MINION i1660Ti</a>
+                    <p>17,490,000đ <sup>18,320,000đ</sup></p>
+                </div>
+                <div class="product-item4">
+                    <a href="ChitietPC04.html"><img src="./PC/PC04.webp"></a> 
+                    <br>
+                    <a href="ChitietPC04.html">TITAN PLUS i3070Ti</a>
+                    <p>73,990,000đ <sup>74,230,000đ</sup></p>
+                </div>
+            </div>
+           
+            <!-- -----------------------LAPTOP GAMING-------------------- -->
+            <div class="product-title">
+                <h2>LAPTOP GAMING BÁN CHẠY</h2>
+            </div>
+            
+            <div class="product-image">
+                <div class="product-item1">
+                    <a href="ChitietGM01.html"><img src="./LapGM/GM01.jpg"></a> 
+                    <br>
+                    <a href="ChitietGM01.html">Laptop Gaming MSI Bravo 15 B5DD 275VN</a>
+                    <p>16,990,000đ <sup>25,990,000đ</sup></p>
+                </div>
+                <div class="product-item2">
+                    <a href="ChitietGM02.html"><img src="./LapGM/GM02.jpg"></a> 
+                    <br>
+                    <a href="ChitietGM02.html">Laptop Gaming Acer Nitro 5 Eagle AN515 57 5669</a>
+                    <p>17,990,000đ <sup>23,990,000đ</sup></p>
+                </div>
+                <div class="product-item3">
+                    <a href="ChitietGM03.html"><img src="./LapGM/GM03.jpg"></a> 
+                    <br>
+                    <a href="ChitietGM03.html">Laptop gaming GIGABYTE G5 GD 51S1123SO</a>
+                    <p>21,990,000đ <sup>26,990,000đ</sup></p>
+                </div>
+                <div class="product-item4">
+                    <a href="ChitietGM04.html"><img src="./LapGM/GM04.webp"></a> 
+                    <br>
+                    <a href="ChitietGM04.html">Laptop Gaming Asus ROG Strix G15 G513IH HN015W</a>
+                    <p>18,490,000đ <sup>23,990,000đ</sup></p>
+                </div>
+            </div>
+
+            <!-- -----------------------LAPTOP VAN PHONG---------------------- -->
+            <div class="product-title">
+                <h2>LAPTOP VĂN PHÒNG BÁN CHẠY</h2>
+            </div>
+            
+            <div class="product-image">
+                <div class="product-item1">
+                    <a href="ChitietVP01.html"><img src="./LapVP/VP01.jpg"></a> 
+                    <br>
+                    <a href="ChitietVP01.html">Laptop MSI Modern 14 B5M 204VN</a>
+                    <p>13,990,000đ <sup>16,990,000đ</sup></p>
+                </div>
+                <div class="product-item2">
+                    <a href="ChitietVP02.html"><img src="./LapVP/VP02.jpg"></a> 
+                    <br>
+                    <a href="ChitietVP02.html">Laptop Lenovo IdeaPad 3 15ALC6 82KU00TCVN</a>
+                    <p>14,490,000đ <sup>15,490,000đ</sup></p>
+                </div>
+                <div class="product-item3">
+                    <a href="ChitietVP03.html"><img src="./LapVP/VP03.jpg"></a> 
+                    <br>
+                    <a href="ChitietVP03.html">Laptop MSI Modern 15 A5M 238VN</a>
+                    <p>14,990,000đ <sup>17,990,000đ</sup></p>
+                </div>
+                <div class="product-item4">
+                    <a href="ChitietVP04.html"><img src="./LapVP/VP04.jpg"></a> 
+                    <br>
+                    <a href="ChitietVP04.html">Laptop Acer Aspire 3 A315 58 59LY</a>
+                    <p>15,390,000đ <sup>16,990,000đ</sup></p>
+                </div>
+            </div>
+
+            <!-- -----------------------MAN HINH---------------------- -->
+            <div class="product-title">
+                <h2>MÀN HÌNH KHUYẾN MÃI HOT</h2>
+            </div>
+            
+            <div class="product-image">
+                <div class="product-item1">
+                    <a href="ChitietMH01.html"><img src="./ManHinh/MH01.webp"></a> 
+                    <br>
+                    <a href="ChitietMH01.html">Màn hình LG 24MK600M-B 24" IPS 75Hz FreeSync</a>
+                    <p>3,950,000đ <sup>4,690,000đ</sup></p>
+                </div>
+                <div class="product-item2">
+                    <a href="ChitietMH02.html"><img src="./ManHinh/MH02.webp"></a> 
+                    <br>
+                    <a href="ChitietMH02.html">Màn hình ViewSonic VA2215-H 22" 75Hz FHD</a>
+                    <p>2,890,000đ <sup>3,600,000đ</sup></p>
+                </div>
+                <div class="product-item3">
+                    <a href="ChitietMH03.html"><img src="./ManHinh/MH03.webp"></a> 
+                    <br>
+                    <a href="ChitietMH03.html">Màn hình Acer EK241Y 24" IPS 75Hz</a>
+                    <p>3,400,000đ <sup>3,990,000đ</sup></p>
+                </div>
+                <div class="product-item4">
+                    <a href="ChitietMH04.html"><img src="./ManHinh/MH04.webp"></a> 
+                    <br>
+                    <a href="ChitietMH04.html">Màn hình AOC 24G2E 24" IPS 144Hz chuyên gaming</a>
+                    <p>4,500,000đ <sup>4,890,000đ</sup></p>
+                </div>
+            </div>
+
+            <!-- -----------------------BAN PHIM---------------------- -->
+            <div class="product-title">
+                <h2>BÀN PHÍM KHUYẾN MÃI HOT</h2>
+            </div>
+            
+            <div class="product-image">
+                <div class="product-item1">
+                    <a href="ChitietBP01.html"><img src="./BanPhim/BP01.webp"></a> 
+                    <br>
+                    <a href="ChitietBP01.html">Bàn phím cơ Gaming DAREU EK87 - Black (Multi-LED)</a>
+                    <p>499,000đ <sup>599,000đ</sup></p>
+                </div>
+                <div class="product-item2">
+                    <a href="ChitietBP02.html"><img src="./BanPhim/BP02.webp"></a> 
+                    <br>
+                    <a href="ChitietBP02.html">Bàn phím Rapoo V500L Rainbow</a>
+                    <p>540,000đ <sup>1,050,000đ</sup></p>
+                </div>
+                <div class="product-item3">
+                    <a href="ChitietBP03.html"><img src="./BanPhim/BP03.webp"></a> 
+                    <br>
+                    <a href="ChitietBP03.html">Bàn phím cơ DareU EK810 Queen</a>
+                    <p>580,000đ <sup>699,000đ</sup></p>
+                </div>
+                <div class="product-item4">
+                    <a href="ChitietBP04.html"><img src="./BanPhim/BP04.webp"></a> 
+                    <br>
+                    <a href="ChitietBP04.html">Bàn phím Rapoo V500 Pro Wireless</a>
+                    <p>590,000đ <sup>1,250,000đ</sup></p>
+                </div>
+            </div>
+            
+            <!-- -----------------------CHUOT---------------------- -->
+            <div class="product-title">
+                <h2>CHUỘT LOGITECH GIÁ RẺ</h2>
+            </div>
+            
+            <div class="product-image">
+                <div class="product-item1">
+                    <a href="ChitietCH01.html"><img src="./Chuot/CH01.webp"></a> 
+                    <br>
+                    <a href="ChitietCH01.html">Chuột Logitech G304 KDA Lightspeed Wireless</a>
+                    <p>1,090,000đ <sup>1,290,000đ</sup></p>
+                </div>
+                <div class="product-item2">
+                    <a href="ChitietCH02.html"><img src="./Chuot/CH02.webp"></a> 
+                    <br>
+                    <a href="ChitietCH02.html">Chuột Logitech G203 LightSync Blue</a>
+                    <p>400,000đ <sup>500,000đ</sup></p>
+                </div>
+                <div class="product-item3">
+                    <a href="ChitietCH03.html"><img src="./Chuot/CH03.webp"></a> 
+                    <br>
+                    <a href="ChitietCH03.html">Chuột Logitech G502 Hero</a>
+                    <p>1,050,000đ <sup>1,590,000đ</sup></p>
+                </div>
+                <div class="product-item4">
+                    <a href="ChitietCH04.html"><img src="./Chuot/CH04.webp"></a> 
+                    <br>
+                    <a href="ChitietCH04.html">Chuột Logitech G102 Lightsync RGB White</a>
+                    <p>400,000đ <sup>599,000đ</sup></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    
+    <div class = "foot-panel">
+        <div>
+            <h3>Liên hệ</h3>
+            <i class="fa-solid fa-map-location-dot"></i> Địa chỉ: 140 Lê Trọng Tấn, Tây Thạnh, Tân Phú, Thành phố Hồ Chí Minh <br>
+            <i class="fa-solid fa-phone-volume"></i> Số điện thoại: (+84) 89 432 737 - (+84) 90 630 9259 <br>
+            <i class="fa-solid fa-envelope-circle-check"></i> Email: baolong@gmail.com
+        </div>
+    </div>
+    <div class="copyright-foot">
+        Copy right&#169; 2001206902 - Nguyễn Thanh Long  and 2001206918 - Nguyễn Thái Bảo
+    </div>
+    <script src="./Main/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,415 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+@media screen and (min-width: 821px){
+    /*--------------------------CONTENT-------------------------*/
+.content{
+    z-index: 0;
+    padding-top: 75px;
+    display: grid;
+    grid-template-areas: "image text" "table table";
+    grid-template-columns: 1fr 2fr;
+    background-color: rgb(218, 216, 216);
+}
+
+.content .content-image img{
+    margin: 10px 10px;
+}
+
+.content .content-text{
+    display: grid;
+    grid-template-areas: "head" "content" "foot";
+    grid-template-rows: 1.5fr 2.2fr 1.5fr;
+    margin-bottom: 14px;
+}
+
+.content-text .text-head{
+    margin-top: 10px;
+    background-color: white;
+    grid-area: head;
+}
+
+.text-head h2{
+    font-size: 24px;
+    margin: 20px 20px;
+}
+
+.text-head p{
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.text-head span{
+    font-weight: bold;
+    color: red;
+}
+
+.content-text .text-content{
+    grid-area: content;
+    background-color: white;
+}
+
+.text-content h3{
+    font-size: 24px;
+    margin: 5px 20px 0px 20px;
+    color: red;
+}
+
+.text-content p{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.text-content p i{
+    color: rgb(60, 216, 12);
+}
+
+.content-text .text-foot{
+    grid-area: foot;
+    background-color: white;
+}
+
+.text-foot p{
+    margin-left: 20px;
+    font-size: 20px;
+    margin-top: 0px;
+}
+
+.text-foot #price-old{
+    text-decoration: line-through;
+    margin-left: 20px;
+}
+
+.text-foot b{
+    margin-left: 20px;
+    color: red;
+}
+
+.text-foot button{
+    font-size: 24px;
+    margin-left: 20px;
+    margin-top: 15px;
+    width: 200px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 50px;
+}
+
+.content-describe{
+    grid-area: table;
+    background-color: white;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.content-describe table,tr,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-size: 20px;
+}
+
+.content-describe table{
+    width: 30% 70%;
+    border: 2px solid black;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.content-describe tr{
+    height: 40px;
+}
+
+.content-describe td{
+    padding-left: 5px;
+}
+
+.content-describe h3{
+    background-color: red;
+    color: white;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    margin: 10px 5px;
+}
+}
+
+@media screen and (min-width: 481px) and (max-width: 820px){
+    /*--------------------------CONTENT-------------------------*/
+.content{
+    z-index: 0;
+    padding-top: 75px;
+    display: grid;
+    grid-template-areas: "image text" "table table";
+    grid-template-columns: 1fr 2fr;
+    background-color: rgb(218, 216, 216);
+}
+
+.content .content-image img{
+    margin: 10px 10px;
+}
+
+.content .content-text{
+    display: grid;
+    grid-template-areas: "head" "content" "foot";
+    grid-template-rows: 1.5fr 2.2fr 1.5fr;
+    margin-bottom: 14px;
+}
+
+.content-text .text-head{
+    margin-top: 10px;
+    background-color: white;
+    grid-area: head;
+}
+
+.text-head h2{
+    font-size: 20px;
+    margin: 20px 20px;
+}
+
+.text-head p{
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+.text-head span{
+    font-weight: bold;
+    color: red;
+}
+
+.content-text .text-content{
+    grid-area: content;
+    background-color: white;
+}
+
+.text-content h3{
+    font-size: 20px;
+    margin: 0px 20px 0px 20px;
+    color: red;
+}
+
+.text-content p{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.text-content p i{
+    color: rgb(60, 216, 12);
+}
+
+.content-text .text-foot{
+    grid-area: foot;
+    background-color: white;
+}
+
+.text-foot p{
+    margin-left: 20px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.text-foot #price-old{
+    text-decoration: line-through;
+    margin-left: 20px;
+}
+
+.text-foot b{
+    margin-left: 20px;
+    color: red;
+}
+
+.text-foot button{
+    font-size: 20px;
+    margin-left: 60px;
+    margin-top: 30px;
+    width: 140px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 40px;
+}
+
+.content-describe{
+    grid-area: table;
+    background-color: white;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.content-describe table,tr,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-size: 20px;
+}
+
+.content-describe table{
+    width: 30% 70%;
+    border: 2px solid black;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.content-describe tr{
+    height: 40px;
+}
+
+.content-describe td{
+    padding-left: 5px;
+}
+
+.content-describe h3{
+    background-color: red;
+    color: white;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    margin: 10px 5px;
+}
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px){
+    /*--------------------------CONTENT-------------------------*/
+.content{
+    z-index: 0;
+    padding-top: 75px;
+    display: grid;
+    grid-template-areas: "image" "text" "table";
+    background-color: rgb(218, 216, 216);
+}
+
+.content .content-image img{
+    width: 100vw;
+}
+
+.content .content-text{
+    display: grid;
+    grid-template-areas: "head" "content" "foot";
+    grid-template-rows: 1.5fr 2.2fr 1.5fr;
+    margin-bottom: 5px;
+}
+
+.content-text .text-head{
+    margin-top: 10px;
+    background-color: white;
+    grid-area: head;
+}
+
+.text-head h2{
+    font-size: 20px;
+    margin: 20px 20px;
+}
+
+.text-head p{
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+.text-head span{
+    font-weight: bold;
+    color: red;
+}
+
+.content-text .text-content{
+    grid-area: content;
+    background-color: white;
+}
+
+.text-content h3{
+    font-size: 20px;
+    margin: 0px 20px 0px 20px;
+    color: red;
+}
+
+.text-content p{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.text-content p i{
+    color: rgb(60, 216, 12);
+}
+
+.content-text .text-foot{
+    grid-area: foot;
+    background-color: white;
+}
+
+.text-foot p{
+    margin-left: 20px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.text-foot #price-old{
+    text-decoration: line-through;
+    margin-left: 20px;
+}
+
+.text-foot b{
+    margin-left: 20px;
+    color: red;
+}
+
+.text-foot button{
+    font-size: 20px;
+    margin-left: 120px;
+    margin-top: 30px;
+    width: 140px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 40px;
+}
+
+.content-describe{
+    grid-area: table;
+    background-color: white;
+    margin-bottom: 5px;
+}
+
+.content-describe table,tr,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-size: 20px;
+}
+
+.content-describe table{
+    width: 30% 70%;
+    border: 2px solid black;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.content-describe tr{
+    height: 40px;
+}
+
+.content-describe td{
+    padding-left: 5px;
+}
+
+.content-describe h3{
+    background-color: red;
+    color: white;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    margin: 10px 5px;
+}
+}

@@ -1,0 +1,547 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+@media screen and (min-width: 821px) {
+    /*--------------------------HEADER-------------------------*/
+.head{
+    height: 75px;
+    width: 100vw;
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    position:fixed;
+    z-index:1;
+}
+
+.head #logo{
+    width: 15%;
+    display: flex;
+    justify-content: center;
+}
+.head #logo a img{
+    height: 75px;
+}
+
+.head .dropdown{
+    display: none;
+}
+
+/* -----------------MENU--------------------- */
+.head #menu{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.head #menu li{
+    position: relative;
+}
+.head #menu li a{
+    text-decoration: none;
+    color: white;
+    line-height: 75px;
+    font-size: 17px;
+    font-weight: bold;
+}
+.head #menu li a:hover{
+    color: black;
+}
+.head #menu .sub-menu{
+    position: absolute;
+    background-color: red;
+    width: 180px;
+    left: -30px;
+    top: 55px;
+    list-style-type: none;
+}
+#menu .sub-menu{
+    height: 240px;
+    display: none;
+}
+#menu .sub-menu li{
+    height: 40px;
+    border-bottom: 2px solid white;
+}
+
+#menu .sub-menu li a{
+    line-height: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 40px;
+    padding-left: 15px;
+    color:white;
+}
+
+#menu .sub-menu li:hover{
+    background-color: rgb(253, 138, 138);
+}
+
+#menu .sub-menu li a:hover{
+    color: white;
+}
+#menu li:hover .sub-menu{
+    display: block;
+}
+
+/* -----------------SEARCH INFO--------------------- */
+#search-info{
+    width: 45%;
+    display: flex;
+    justify-content:space-between;
+}
+
+#search-info .search{
+    width: 60%;
+    height: 30px;
+    margin: auto;
+    border-radius: 35px;
+    background-color: white;
+}
+
+.search #search-text{
+    height: 30px;
+    border: none;
+    outline: none;
+    width: 75%;
+    border-radius: 35px;
+    margin-left: 5px;
+    padding-left: 5px;
+}
+
+.search #search-icon{
+    border: none;
+    padding: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+    float: right;
+    background-color: white;
+    opacity: 0.6;
+}
+
+#search-info .log-reg{
+    margin: auto;
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+}
+
+.log-reg i{
+    font-size: 20px;
+    color: white;
+}
+
+.log-reg ul{
+    list-style: none;
+    width: 120px;
+    height: 20px;
+    margin-left: -40px;
+    margin-top: 5px;
+}
+
+.log-reg ul li{
+    background-color: red;
+    border-bottom: 2px solid white;
+    height: 30px;
+    line-height: 30px;
+    display: none;
+}
+
+.log-reg ul li a{
+    text-decoration: none;
+    color: white;
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+.log-reg ul li:hover{
+    background-color: rgb(223, 198, 223);
+}
+
+#search-info .log-reg:hover li{
+    display: block;
+}
+
+#search-info .log-reg:hover i{
+    color: black;
+}
+
+#search-info .cart-shop{
+    margin: auto;
+    cursor: pointer;
+    width: 5%;
+}
+.cart-shop i{
+    color: white;
+    font-size: 19px;
+}
+.cart-shop:hover a i{
+    color: black;
+    font-size: 21px;
+}
+
+/*--------------------------FOOTER-------------------------*/
+                        
+.foot-panel{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    z-index: 0;
+    font-size: 20px;
+}
+
+.foot-panel h3{
+    margin-bottom: 20px;
+}
+
+.foot-panel div i{
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+.copyright-foot{
+    text-align:center;
+    height: 60px;
+    line-height: 60px;
+    font-size: 16px;
+    background-color:rgb(199, 196, 196);
+    color: #4d4c4c;
+    margin-top: 80px;
+}
+}
+
+@media screen and (min-width: 481px) and (max-width: 820px) {
+    /*--------------------------HEADER-------------------------*/
+.head{
+    height: 75px;
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    position:fixed;
+    z-index:1;
+    width: 100vw;
+}
+
+.head .dropdown{
+    margin-top: 15px;
+}
+
+.dropdown button{
+    background-color: red; 
+    border: none; 
+    outline: none;
+    font-size: 24px;
+    color: white;
+}
+
+.dropdown button:active{
+    background-color: red;
+}
+
+.dropdown-submenu {
+    position: relative;
+}
+  
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+}
+
+.head #logo{
+    width: 20vw;
+    display: flex;
+}
+.head #logo a img{
+    height: 75px;
+}
+
+/* -----------------MENU--------------------- */
+.head #menu{
+    display: none;
+}
+
+/* -----------------SEARCH INFO--------------------- */
+#search-info{
+    display: flex;
+    width: 60vw;
+    margin-right: 3%;
+}
+
+#search-info .search{
+    width: 60%;
+    height: 30px;
+    margin: auto;
+    border-radius: 35px;
+    background-color: white;
+}
+
+.search #search-text{
+    height: 30px;
+    border: none;
+    outline: none;
+    width: 76%;
+    border-radius: 35px;
+    margin-left: 5px;
+    padding-left: 5px;
+}
+
+.search #search-icon{
+    border: none;
+    padding: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+    float: right;
+    background-color: white;
+    opacity: 0.6;
+}
+
+#search-info .log-reg{
+    margin: auto;
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+}
+
+.log-reg i{
+    font-size: 20px;
+    color: white;
+}
+
+.log-reg ul{
+    list-style: none;
+    width: 120px;
+    height: 20px;
+    margin-left: -40px;
+    margin-top: 5px;
+}
+
+.log-reg ul li{
+    background-color: red;
+    border-bottom: 2px solid white;
+    height: 30px;
+    line-height: 30px;
+    display: none;
+}
+
+.log-reg ul li a{
+    text-decoration: none;
+    color: white;
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+.log-reg ul li:hover{
+    background-color: rgb(253, 138, 138);
+}
+
+#search-info .log-reg:hover li{
+    display: block;
+}
+
+#search-info .log-reg:hover i{
+    color: black;
+}
+
+#search-info .cart-shop{
+    margin: auto;
+    cursor: pointer;
+    width: 5%;
+}
+.cart-shop i{
+    color: white;
+    font-size: 19px;
+}
+.cart-shop:hover a i{
+    color: black;
+    font-size: 21px;
+}
+
+/*--------------------------FOOTER-------------------------*/
+                        
+.foot-panel{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    z-index: 0;
+    font-size: 20px;
+}
+
+.foot-panel h3{
+    margin-bottom: 20px;
+}
+
+.foot-panel div i{
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+.copyright-foot{
+    text-align:center;
+    height: 60px;
+    line-height: 60px;
+    font-size: 16px;
+    background-color:rgb(199, 196, 196);
+    color: #4d4c4c;
+    margin-top: 80px;
+}
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    /*--------------------------HEADER-------------------------*/
+.head{
+    height: 75px;
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    position:fixed;
+    z-index:1;
+    width: 100vw;
+}
+
+.head .dropdown{
+    margin-top: 15px;
+}
+
+.dropdown button{
+    background-color: red; 
+    border: none; 
+    outline: none;
+    font-size: 24px;
+    color: white;
+}
+
+.dropdown button:active{
+    background-color: red;
+}
+
+.dropdown-submenu {
+    position: relative;
+}
+  
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+}
+
+.head #logo{
+    width: 40vw;
+    display: flex;
+}
+.head #logo a img{
+    height: 75px;
+}
+
+/* -----------------MENU--------------------- */
+.head #menu{
+    display: none;
+}
+
+/* -----------------SEARCH INFO--------------------- */
+#search-info{
+    display: flex;
+    width: 30vw;
+    margin-right: 3%;
+}
+
+#search-info .search{
+    display: none;
+}
+
+#search-info .log-reg{
+    margin: auto;
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+}
+
+.log-reg i{
+    font-size: 20px;
+    color: white;
+}
+
+.log-reg ul{
+    list-style: none;
+    width: 120px;
+    height: 20px;
+    margin-left: -40px;
+    margin-top: 5px;
+}
+
+.log-reg ul li{
+    background-color: red;
+    border-bottom: 2px solid white;
+    height: 30px;
+    line-height: 30px;
+    display: none;
+}
+
+.log-reg ul li a{
+    text-decoration: none;
+    color: white;
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+.log-reg ul li:hover{
+    background-color: rgb(253, 138, 138);
+}
+
+#search-info .log-reg:hover li{
+    display: block;
+}
+
+#search-info .log-reg:hover i{
+    color: black;
+}
+
+#search-info .cart-shop{
+    margin: auto;
+    cursor: pointer;
+    width: 5%;
+}
+.cart-shop i{
+    color: white;
+    font-size: 19px;
+}
+.cart-shop:hover a i{
+    color: black;
+    font-size: 21px;
+}
+
+/*--------------------------FOOTER-------------------------*/
+                        
+.foot-panel{
+    margin-top: 50px;
+    z-index: 0;
+    font-size: 5vw;
+}
+
+.foot-panel h3{
+    margin-bottom: 20px;
+}
+
+.foot-panel div i{
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+.copyright-foot{
+    text-align:center;
+    height: 60px;
+    line-height: 60px;
+    font-size: 2.5vw;
+    background-color:rgb(199, 196, 196);
+    color: #4d4c4c;
+    margin-top: 80px;
+}
+}

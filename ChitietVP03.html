@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ/ Chi tiết sản phẩm</title>
+    <link rel="stylesheet" href="./PC/chitietSP.css">
+    <link rel="stylesheet" href="./Main/head_foot.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.1/css/all.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class = "head">
+        <!-- -----------------------Menu-Ipad-------------------------------- -->
+        <div class="container-fluid">
+            <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                    <i class="fa-solid fa-bars"></i>
+                <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                    <li><a href="index.html">TRANG CHỦ</a></li>
+                    <li><a href="Introduce.html">GIỚI THIỆU</a></li>
+                    <li class="dropdown-submenu">
+                        <a class="test" tabindex="-1" href="index.html">SẢN PHẨM<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="Product_PC.html">PC</a></li>
+                            <li><a href="Product_LAP.html">Laptop</a></li>
+                            <li><a href="Product_LKPC.html">Linh kiện PC</a></li>
+                            <li><a href="Product_Chuot.html">Chuột</a></li>
+                            <li><a href="Product_ManHinh.html">Màn hình</a></li>
+                            <li style="border-bottom: none;"><a href="Product_BP.html">Bàn phím</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="Contact.html">LIÊN HỆ</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div id="logo">
+            <a href="index.html"><img src="./Main/image_main/logo.png"></a>
+        </div>
+       
+        <!-- -----------------------Menu-PC-------------------------------- -->
+        <ul id="menu">
+            <li><a style="color: black;" href="index.html">TRANG CHỦ</a></li>
+            <li><a href="Introduce.html">GIỚI THIỆU</a></li> 
+            <li><a href="index.html">SẢN PHẨM</a>
+                <ul class="sub-menu">
+                    <li><a href="Product_PC.html">PC</a></li>
+                    <li><a href="Product_LAP.html">Laptop</a></li>
+                    <li><a href="Product_LKPC.html">Linh kiện PC</a></li>
+                    <li><a href="Product_Chuot.html">Chuột</a></li>
+                    <li><a href="Product_ManHinh.html">Màn hình</a></li>
+                    <li style="border-bottom: none;"><a href="Product_BP.html">Bàn phím</a></li>
+                </ul>
+            </li>
+            <li><a href="Contact.html">LIÊN HỆ</a></li>
+        </ul>
+        
+        <div id="search-info">
+            <div class="search">
+                <input type="text" name="product search" id="search-text" placeholder="Bạn muốn tìm sản phẩm gì ?">
+                <a href="Product_LKPC.html"><button id="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button></a>
+            </div>
+
+            <div class="log-reg">
+                <i class="fa-solid fa-user"></i>
+                <ul>
+                    <li><a href="Login.html">ĐĂNG NHẬP</a></li>
+                    <li style="border-bottom: none;"><a href="Register.html">ĐĂNG KÝ</a></li>
+                </ul>
+            </div>
+            
+            <div class="cart-shop">
+                <a href="Paymoney.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------------------------------------------------------- -->
+    <div class ="content"> 
+        <div class="content-image">
+            <img src="./LapVP/VP03.jpg">
+        </div>
+
+        <div class="content-text">
+            <div class="text-head">
+                <h2>Laptop MSI Modern 15 A5M 238VN</h2>
+                <p><span>Ưu đãi đặc biệt:</span> Mua thêm <b>chuột Logitech G203</b> giảm ngay <span>200,000đ</span></p>
+                <p style="border-bottom: 2px solid rgb(218, 216, 216);"><br></p>
+            </div>
+
+            <div class="text-content">
+                <h3>ƯU ĐÃI KHI MUA KÈM LAPTOP</h3>
+                <p><i class="fa-solid fa-star"></i> Giảm ngay <b>100,000đ</b> khi mua thêm màn hình máy tính.</p>
+                <p><i class="fa-solid fa-star"></i> Giảm ngay <b>150,000đ</b> khi mua thêm ram.</p>
+                <p><i class="fa-solid fa-star"></i> Giảm ngay <b>50,000đ</b> khi mua kèm Microsoft Office</p>
+                <p style="border-bottom: 2px solid rgb(218, 216, 216);"><br></p>
+            </div>
+
+            <div class="text-foot">
+                <p>Giá Cũ:  <span id="price-old">17,990,000đ</span></p>
+                <p>Giá KM:  <b>14,990,000đ</b></p>
+
+                <a href="PayVP03.html"><button>ĐẶT HÀNG</button></a>
+            </div>
+        </div>
+
+        <div class="content-describe">
+            <h3>MÔ TẢ</h3>
+            <table>
+                <tr>
+                    <td style="width: 20%"><b>CPU</b></td>
+                    <td>AMD Ryzen 7-5800H 3.20GHz upto 4.40GHz, 8 cores 16 threads</td>
+                </tr>
+                <tr>
+                    <td><b>RAM</b></td>
+                    <td>DDR4 8GB (1 x 8GB) 3200MHz; 2 slots, Up to 64GB</td>
+                </tr>
+                <tr>
+                    <td><b>Ổ cứng</b></td>
+                    <td>512GB NVMe PCIe Gen3x4 SSD</td>
+                </tr>
+                <tr>
+                    <td><b>Màn hình</b></td>
+                    <td>15.6 inch FHD (1920*1080), 60Hz 45%NTSC IPS-Level</td>
+                </tr>
+                <tr>
+                    <td><b>Bàn phím</b></td>
+                    <td>Backlight Keyboard ( Red )</td>
+                </tr>
+                <tr>
+                    <td><b>Hệ điều hành</b></td>
+                    <td>Windows 11 Home</td>
+                </tr>
+                <tr>
+                    <td><b>Trọng lượng</b></td>
+                    <td>2.35 kg</td>
+                </tr>
+                <tr>
+                    <td><b>Pin</b></td>
+                    <td>3 Cell 53.5WHr</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class = "foot-panel">
+        <div>
+            <h3>Liên hệ</h3>
+            <i class="fa-solid fa-map-location-dot"></i> Địa chỉ: 140 Lê Trọng Tấn, Tây Thạnh, Tân Phú, Thành phố Hồ Chí Minh <br>
+            <i class="fa-solid fa-phone-volume"></i> Số điện thoại: (+84) 89 432 737 - (+84) 90 630 9259 <br>
+            <i class="fa-solid fa-envelope-circle-check"></i> Email: baolong@gmail.com
+        </div>
+    </div>
+
+    <div class="copyright-foot">
+        Copy right&#169; 2001206902 - Nguyễn Thanh Long  and 2001206918 - Nguyễn Thái Bảo
+    </div>
+    <script src="./Main/script.js"></script>
+</body>
+</html>
